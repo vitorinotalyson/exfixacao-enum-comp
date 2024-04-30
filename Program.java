@@ -46,6 +46,10 @@ public class Program {
             order.addItem(orders);
         }
         System.out.println("ORDER SUMMARY: ");
+        System.out.println(order);
+        System.out.print("Total price: $ ");
+        Double total = order.total();
+        System.out.print(total);
         sc.close();
     }
 }

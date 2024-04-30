@@ -60,4 +60,16 @@ public class Order {
         }
         return sum;
     }
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Order moment: "+sdf.format(moment)+"\n");
+        sb.append("order Status: "+status+"\n");
+        sb.append("Client: "+getClient()+"\n");
+        sb.append("Order Items:\n");
+        for (OrderItem item : items){
+            sb.append(item.toString()+"\n");
+        }
+        return sb.toString();
+    }
+
 }
